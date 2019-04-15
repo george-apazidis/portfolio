@@ -3,39 +3,55 @@
   }
   
   body {
-    font-family: "Open Sans",
-    sans-serif; 
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
     color: #444;
     text-align: center;
     line-height: 1.5;
   }
   
   header {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     z-index: 10;
     padding: 0;
+    background-image: url(images/devices.png);
+    background-repeat: no-repeat;
+    background-size: 89%;
+    background-position: 50% bottom;
+    padding-bottom: 170px;
   }
 
   header img {
-    width: 70px;
-    margin: 4px 5px 5px 10px;
-    float: left;
+    width: 140px;
+    margin: 20px;
+  }
+
+  header h3 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+
+  header h2 {
+    color: rgba(10,10,10,0.9);
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -5px;
   }
 
   h1 {
     display: block;
-    font-size: 28px;
-    margin: 0px 0 0 5px;
-    text-align: left;
-    padding-top: 10px;
+    font-size: 32px;
+    color: rgb(41, 51, 71);
+    font-weight: normal;
+    margin-bottom: 0px;
+    font-family: 'Russo One', sans-serif;
   }
 
   h2 {
+    color: rgba(10,10,10,0.9);
+    font-weight: normal;
+    font-size: 20px;
     margin: 0;
-    font-size: 17px;
-    float: right;
-    margin-right: 10px;
   }
 
   h3 {
@@ -54,6 +70,12 @@
     position: relative;
     clear: both;
     font-size: 18px;
+    background-color: #0071bc;
+  }
+  
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
   }
   
   section {
