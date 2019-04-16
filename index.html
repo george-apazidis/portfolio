@@ -3,39 +3,54 @@
 <head>
     <title>George Apazidis - Front-End Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Russo+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header role="banner">
+        <div id="header-nav">
+            <a id="logo" href="#">George Apazidis</a>
+
+            <button class="burg">
+                <span class="burg1"></span>
+                <span class="burg2"></span>
+                <span class="burg3"></span>
+            </button>
+
+            <nav role="navigation">
+                <!-- convert to button -->
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
         <h1>George Apazidis</h1>
         <h2>Front-End Developer</h2>
         <img src="images/george-apazidis-blue.png" alt="George Apazidis">
         <h2>Let's Build.</h2>
     </header>
-    <nav role="navigation">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+
     
     <main role="main">
         
-        <section class="hero">
 
+
+        <section class="about">
+            <h3>about me</h2>
+            <p>I’ve always been excited about building things - from Legos when I was a child, to websites and apps today.  I design and build with a strong focus on user experience. Check out my work below!  When I’m not coding I enjoy spending time outdoors, running, cycling and hiking.</p>
         </section>
 
         <section>
-            <h3>About</h2>
-            <p>I’ve always been excited about building things - from legos when I was a child, to websites and apps today.  I design and build with a strong focus on user experience. Check out my work below!  When I’m not coding I enjoy spending time outdoors, running, cycling and hiking.</p>
-        </section>
-
-        <section>
-            <h3>Projects</h3>
+            <h3>projects</h3>
             <section>
                 <img src="images/gray-x-box.png">
                 <h4>Interactive Web App</h4>
@@ -167,5 +182,41 @@
         
     </main>
     <footer role="content-info">&copy; 2019 | George Apazidis</footer>
+
+
+<script>
+
+    function onMainNavigationClick() {
+        $('.main_navigation li a').click(function () {
+            console.log('inside click');
+            if ($('.main_navigation').hasClass('open-nav')) {
+                $('.navigation').removeClass('open-nav');
+                $('.main_navigation').removeClass('open-nav');
+            }
+        });
+    }
+
+
+    // mobile icon click
+    function mobileToggleOnClick() {
+        $('.burg').click(function () {
+            
+            // animate icon
+            $('.burg').stop().toggleClass('burg-close');
+            
+            // animate menu
+            $('nav').stop().slideToggle('fast');
+            
+        });
+    }
+
+    function initialzieFunctions () {
+        mobileToggleOnClick();
+        onMainNavigationClick();
+    }
+
+    $(initialzieFunctions);
+
+</script>
 </body>
 </html>

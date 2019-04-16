@@ -19,6 +19,7 @@
     background-size: 89%;
     background-position: 50% bottom;
     padding-bottom: 170px;
+    margin-top: 70px;
   }
 
   header img {
@@ -42,9 +43,9 @@
     display: block;
     font-size: 32px;
     color: rgb(41, 51, 71);
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 0px;
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   h2 {
@@ -55,32 +56,42 @@
   }
 
   h3 {
-    margin: 0;
-    background-color: rgb(153, 153, 153);
+    margin: 20px 0;
     color: rgb(255, 255, 255);
+    font-size: 32px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
   }
 
   nav,
   footer {
-    padding: 1% 0;
+    padding: 0;
     background-color: #aaa;
   }
   
   nav {
     position: relative;
     clear: both;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #0071bc;
   }
   
   nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav a:hover {
+    opacity: 30%;
+    background-color: rgb(45, 139, 202);
   }
 
   section {
     min-height: 200px;
-    padding: 0;
+    padding: 40px 20px;
     background-color: #fff;
     margin-bottom: 20px;
   }
@@ -100,19 +111,11 @@
     background-position: 50%;
   }
 
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: space-evenly;
-  }
-
   p {
     text-align: left;
-    padding: 20px;
+    padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   section section {
@@ -143,12 +146,6 @@
     height: 30px;
   }
 
- nav {
-    position:-webkit-sticky;
-    position:sticky;
-    top:0px;
-    z-index:100
-  }
 
   .flex-container {
     display: flex;
@@ -189,4 +186,128 @@ figcaption {
   font-size: 20px;
   margin: 0;
   padding: 0;
+}
+
+
+#header-nav {
+  background-color: rgb(0, 113, 188);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: row wrap;
+  -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#logo {
+
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  line-height: 0;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  flex: 1;
+  display: none; /* flex */
+}
+
+
+
+
+.mobile-toggle {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  padding-top: 6px;
+}
+
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #fff;
+  display: block;
+}
+
+nav {
+  z-index:100;
+  display: none;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+nav li {
+  flex: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav li:first-child {
+  border-top: none;
+}
+
+
+/* Mobile Icon*/
+.burg {
+  width: 40px;
+  background: none;
+  border: none;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.burg:active, .burg:focus {
+  border: none;
+  outline: none;
+}
+
+.burg1,
+.burg3,
+.burg2 {
+  background-color: #fff;
+  border-radius: 4px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.burg-close .burg1 {
+  transform: translateY(10px) rotate(135deg);
+}
+
+.burg-close .burg2 {
+  transform: scale(0);
+}
+
+.burg-close .burg3 {
+  transform: translateY(-10px) rotate(-135deg);
+}
+
+#logo.hasScrolled {
+  display:flex;
+}
+
+.about {
+  background-color: rgb(0, 113, 188);
+  color: rgb(255, 255, 255);
 }
