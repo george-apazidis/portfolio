@@ -144,7 +144,7 @@
     width: 100%;
     font-size: 16px;
     height: 46px;
-    margin: 12px 0px;
+    margin: 10px 0px;
     background-color: rgb(0, 119, 181);
     border: none;
     border-radius: 10px 8px 8px 10px;
@@ -216,19 +216,20 @@
   }
 
   .skills-item {
-    width: 150px;
+    width: 140px;
     margin: 12px 0;
 }
 
 
 .skills-item img {
-  width: 100px;
-  height: 100px;
-
+  height: 80px;
+  width: 80px;
+  box-shadow: none;
 }
 
 figcaption {
   line-height: 1;
+  margin: 6px 0px 14px 0;
 }
 
 .contact {
@@ -379,7 +380,7 @@ h4 {
 
 .tech-stack {
   list-style-type: none;
-  margin: 10px 0 5px 0;
+  margin: 10px 0 0px 0;
   padding: 0;
   font-size: 14px;
   display: flex;
@@ -391,6 +392,7 @@ h4 {
   background-color: rgb(204, 204, 204);
   padding: 6px 9px;
   border-radius: 8px;
+  margin-block-end: 10px;
 }
 
 .btns {
