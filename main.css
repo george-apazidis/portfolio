@@ -65,9 +65,10 @@
   h3 {
     margin: 20px 0;
     color: rgb(255, 255, 255);
-    font-size: 32px;
+    font-size: 30px;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1px;
   }
 
   nav,
@@ -141,7 +142,7 @@
 
   button {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     height: 46px;
     margin: 12px 0px;
     background-color: rgb(0, 119, 181);
@@ -399,4 +400,8 @@ h4 {
 
 .projects form {
   width: 47%;
+}
+
+.skills h3 {
+  color: rgb(41, 51, 71);
 }
