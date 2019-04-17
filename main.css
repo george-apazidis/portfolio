@@ -8,6 +8,7 @@
     color:rgb(12, 26, 38);
     text-align: center;
     line-height: 1.5;
+    padding-top:70px;
   }
   
   header {
@@ -19,12 +20,16 @@
     background-size: 89%;
     background-position: 50% bottom;
     padding-bottom: 170px;
-    margin-top: 70px;
   }
 
   header img {
     width: 140px;
     margin: 20px;
+  }
+
+  h1 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
   }
 
   header h3 {
