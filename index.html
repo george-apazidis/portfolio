@@ -7,30 +7,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    
-
 </head>
 <body>
     <header role="banner">
         <div id="header-nav">
             <h1>George Apazidis</h1>
             <a id="logo" href="#">George Apazidis</a>
-
             <div class="burg">
                 <div class="burg1"></div>
                 <div class="burg2"></div>
                 <div class="burg3"></div>
             </div>
-
             <nav role="navigation">
-               
                     <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Skills</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </nav>
+            </nav>
         </div>
         <img src="images/george-apazidis-blue.png" alt="George Apazidis">
         <h2>Front-End Developer based in <span>San Diego, California</span></h2>
@@ -62,7 +57,6 @@
                 </div>
             </section>
         </section>
-
         <section class="skills">
             <h3>skills</h3>
             <div class="flex-container">
@@ -72,35 +66,30 @@
                             HTML5
                         </figcaption>
                     </figure>
-
                     <figure class="skills-item">
                         <img src="images/css3.svg" alt="CSS 3">
                         <figcaption>
                             CSS3
                         </figcaption>
                     </figure>
-
                     <figure class="skills-item">
                         <img src="images/javascript.svg" alt="JavaScript (ES6)">
                         <figcaption>
                             JavaScript (ES6)
                         </figcaption>
                     </figure>
-
                     <figure class="skills-item">
                             <img src="images/jquery.svg" alt="jQuery">
                             <figcaption>
                                 jQuery
                             </figcaption>
                     </figure>
-
                     <figure class="skills-item">
                         <img src="images/github.svg" alt="GitHub">
                         <figcaption>
                             GitHub
                         </figcaption>
                     </figure>
-
                     <figure class="skills-item">
                         <img src="images/bootstrap.svg" alt="Bootstrap">
                         <figcaption>
@@ -109,7 +98,6 @@
                     </figure>
                 </div>
         </section>
-
         <section class="contact">
             <h3>contact</h3>
             <div class="contact-icons">
@@ -120,53 +108,15 @@
             </div>
             <p class="contact-message">Looking forward to hearing from you!</p>
         </section>
-        
     </main>
     <footer role="content-info">&copy; 2019 | George Apazidis</footer>
 
-
-
-
     <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-
-<script>
-
-    function onMainNavigationClick() {
-        $('.main_navigation li a').click(function () {
-            console.log('inside click');
-            if ($('.main_navigation').hasClass('open-nav')) {
-                $('.navigation').removeClass('open-nav');
-                $('.main_navigation').removeClass('open-nav');
-            }
-        });
-    }
-
-
-    // mobile icon click
-    function mobileToggleOnClick() {
-        $('.burg').click(function () {
-            
-            // animate icon
-            $('.burg').stop().toggleClass('burg-close');
-            
-            // animate menu
-            $('nav').stop().slideToggle('fast');
-            
-        });
-    }
-
-    function initialzieFunctions () {
-        mobileToggleOnClick();
-        onMainNavigationClick();
-    }
-
-    $(initialzieFunctions);
-
-</script>
-
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>   
+   
+    <script src="script.js" ></script>   
 
 </body>
 </html>

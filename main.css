@@ -418,3 +418,8 @@ h4 {
     color: #fff;
     padding-bottom: 70px;
 }
+
+footer {
+  padding: 20px 0;
+  background-color: rgb(255, 255, 255);
+}
