@@ -98,15 +98,9 @@
   }
 
   section {
-    min-height: 200px;
     padding: 40px 20px;
-    background-color: #fff;
-    margin-bottom: 20px;
   }
   
-  section:nth-child(even) {
-    background-color: #ddd;
-  }
   
   .hero {
     background-color: rgb(255, 255, 255);
@@ -232,13 +226,24 @@ figcaption {
   margin: 6px 0px 14px 0;
 }
 
-.contact {
+.contact-icons {
   display: flex;
   justify-content: space-evenly;
   padding: 20px 0px;
+  align-items: center;
 }
 
-.contact img {
+.contact-icons  a {
+  font-size: 60px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-icons a:hover {
+  color: #eeeeee;
+}
+
+.contact-icons img {
   width: 80px;
   height: 80px;
 }
@@ -264,8 +269,8 @@ figcaption {
   flex-flow: row wrap;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-   z-index: 100;
-   -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
   -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
   box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
 }
@@ -406,4 +411,10 @@ h4 {
 
 .skills h3 {
   color: rgb(41, 51, 71);
+}
+
+.contact {
+    background-color: rgb(0, 119, 181);
+    color: #fff;
+    padding-bottom: 70px;
 }
