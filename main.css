@@ -421,7 +421,6 @@ footer {
     text-align: left;
     background: none;
     padding-bottom: 0px;
-    overflow: auto;
   }
 
   #header-nav {
@@ -434,7 +433,7 @@ footer {
   }
 
   header img {
-    float: left;
+    /* float: left; */
   }
 
   header h1 {
