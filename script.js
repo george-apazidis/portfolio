@@ -3,11 +3,14 @@
 function navClicks () {
     $('.burg, nav a').click(function () {
         
-        // animate icon
-        animateMobileIcon();
-        
-        // show or hide menu
-        navBarShowHide();  
+        // do only if mobile menu is active
+        if ($(window).width() < 576) {
+            // animate icon
+            animateMobileIcon();
+            
+            // show or hide menu
+            navBarShowHide();  
+        }
     });
 }
 

@@ -24,7 +24,15 @@ header {
   background-repeat: no-repeat;
   background-size: 89%;
   background-position: 50% bottom;
-  padding-bottom: 170px;
+  padding-bottom: 43%;
+}
+
+header h1 {
+  display: none;
+}
+
+main {
+  margin-top: -1px;
 }
 
 h1 {
@@ -38,6 +46,10 @@ h1 {
   text-align: left;
   line-height: 30px;
   letter-spacing: -1px;
+  position: absolute;
+  top: 12px;
+  left: 7px;
+  z-index: 101;
 }
 
 h2 {
@@ -139,7 +151,6 @@ nav ul {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  justify-content: space-evenly;
 }
 
 nav li {
@@ -209,10 +220,6 @@ nav a:hover {
 section {
   padding: 40px 20px;
   scroll-behavior: smooth;
-}
-
-section section {
-  padding: 20px;
 }
 
 section img {
@@ -403,3 +410,91 @@ footer {
   padding: 20px 0;
   background-color: rgb(255, 255, 255);
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  body {
+    padding-top: 0;
+  }
+
+  header {
+    text-align: left;
+    background: none;
+    padding-bottom: 0px;
+    overflow: auto;
+  }
+
+  #header-nav {
+    padding: 0;
+    position: sticky;
+    clear: both;
+  }
+
+  #header-nav h1 {
+    display:none;
+  }
+
+  header img {
+    float: left;
+  }
+
+  header h1 {
+    display: inline-block;
+    position: static;
+    color: rgb(0, 0, 0);
+    font-size: 42px;
+    line-height: 40px;
+    margin-top: 30px;
+  }
+
+  header h2 {
+    color: rgba(10,10,10,0.9);
+    font-weight: normal;
+    font-size: 17px;
+    position: relative;
+    margin-top: 6px;
+    padding-left: 163px;
+    line-height: 22px;
+  }
+
+  header img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .burg {
+    display: none;
+  }
+
+  nav {
+    display: block !important; /* fringe case where the nav is hidden via jQuery on mobile menu, then browser is resized. */
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  main {
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    background-image: url(images/devices.svg);
+    background-size: 550px;
+    background-position: 50% 83px;
+  }
+
+  section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+ }
