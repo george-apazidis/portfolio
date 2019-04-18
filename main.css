@@ -413,6 +413,11 @@ footer {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
+  html, body {
+    overflow: initial;
+    background: none;
+  }
+
   body {
     padding-top: 0;
   }
