@@ -427,7 +427,6 @@ footer {
   #header-nav {
     padding: 0;
     position: sticky;
-    clear: both;
   }
 
   #header-nav h1 {
@@ -440,21 +439,22 @@ footer {
 
   header h1 {
     display: inline-block;
-    position: static;
+    position: absolute;
     color: rgb(0, 0, 0);
     font-size: 42px;
     line-height: 40px;
-    margin-top: 30px;
+    top: 30px;
+    left: 160px;
   }
 
   header h2 {
     color: rgba(10,10,10,0.9);
     font-weight: normal;
     font-size: 17px;
-    position: relative;
-    margin-top: 6px;
-    padding-left: 163px;
+    position: absolute;
     line-height: 22px;
+    top: 77px;
+    left: 163px;
   }
 
   header img {
