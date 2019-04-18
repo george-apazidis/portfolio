@@ -422,6 +422,7 @@ footer {
     text-align: left;
     background: none;
     padding-bottom: 0px;
+    padding-left: 3%;
   }
 
   #header-nav {
@@ -431,6 +432,7 @@ footer {
     position: -o-sticky;
     position: -ms-sticky;
     position: sticky;
+    clear: both;
   }
 
   #header-nav h1 {
@@ -438,32 +440,29 @@ footer {
   }
 
   header img {
-    /* float: left; */
+     float: left; 
+     width: 120px;
+     height: 120px;
   }
 
   header h1 {
     display: inline-block;
-    position: absolute;
+    position: relative;
     color: rgb(0, 0, 0);
     font-size: 42px;
     line-height: 40px;
-    top: 30px;
-    left: 160px;
+    top: 34px;
+    left: 0px;
   }
 
   header h2 {
     color: rgba(10,10,10,0.9);
     font-weight: normal;
-    font-size: 17px;
-    position: absolute;
+    font-size: 16px;
+    position: relative;
     line-height: 22px;
-    top: 77px;
-    left: 163px;
-  }
-
-  header img {
-    width: 120px;
-    height: 120px;
+    top: 43px;
+    left: 3px;
   }
 
   .burg {
@@ -501,4 +500,21 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+
+  header h1 {
+    font-size: 52px;
+    line-height: 52px;
+    top: 41px;
+    left: 182px;
+  }
+
+  header h2 {
+    line-height: 24px;
+    top: 106px;
+    left: 188px;
+  }
  }
