@@ -257,7 +257,7 @@ section img {
 }
 
 .tech-stack li {
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(233, 233, 233);
   padding: 6px 9px;
   border-radius: 8px;
   margin: 0 2px 10px 2px;
@@ -376,7 +376,7 @@ figcaption {
 .contact-icons {
   display: flex;
   justify-content: space-evenly;
-  padding: 20px 0px;
+  padding: 20px 0px 30px 0px;
   align-items: center;
 }
 
@@ -500,21 +500,43 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
+  header {
+    padding-left: 40px;
+  }
+
   header img {
     width: 150px;
     height: 150px;
+    margin-left: 0px;
   }
 
   header h1 {
     font-size: 52px;
     line-height: 52px;
     top: 41px;
-    left: 182px;
+    left: 0;
   }
 
   header h2 {
-    line-height: 24px;
-    top: 106px;
-    left: 188px;
+    line-height: 25px;
+    top: 54px;
+    left: 6px;
+    font-size: 18px;
   }
+
+
+  /* assign max widths to all
+     elements below to keep the 
+     background colors spanning 
+     across the screen */
+  
+  header,nav ul, h3, p, 
+  .flex-container-skills,
+  .contact-icons,
+  .contact-message {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
  }
