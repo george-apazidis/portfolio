@@ -86,6 +86,11 @@ p {
   font-size: 18px;
 }
 
+button {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
 
 /* Start header styles */
 
@@ -214,12 +219,14 @@ nav a:hover {
 
 
 section {
-  padding: 40px 20px;
+  padding: 40px 20px 80px 20px;
   scroll-behavior: smooth;
 }
 
 section img {
   width: 100%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
   border-radius: 5px;
 }
@@ -248,7 +255,7 @@ section img {
 
 .tech-stack {
   list-style-type: none;
-  margin: 10px 0 0px 0;
+  margin: 26px 0 0px 0;
   padding: 0;
   font-size: 14px;
   display: flex;
@@ -276,7 +283,7 @@ button {
   width: 100%;
   font-size: 16px;
   height: 46px;
-  margin: 10px 0px;
+  margin: 20px 0px 0px 0px;
   background-color: rgb(0, 119, 181);
   border: none;
   border-radius: 10px 8px 8px 10px;
@@ -291,6 +298,8 @@ button {
 button:hover {
   background-color: rgb(45, 139, 202);
   text-decoration: underline;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
@@ -373,11 +382,18 @@ figcaption {
   padding-bottom: 70px;
 }
 
+.contact h3 {
+  text-align: center;
+}
+
 .contact-icons {
   display: flex;
   justify-content: space-evenly;
   padding: 20px 0px 30px 0px;
   align-items: center;
+  max-width: 425px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-icons  a {
@@ -456,6 +472,7 @@ footer {
   }
 
   header h2 {
+    display: inline-block;
     color: rgba(10,10,10,0.9);
     font-weight: normal;
     font-size: 16px;
@@ -500,6 +517,12 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
+  h4 {
+    margin-top: 0px;
+    text-align: left;
+    line-height: 20px;
+  }
+
   header {
     padding-left: 40px;
   }
@@ -524,16 +547,28 @@ footer {
     font-size: 18px;
   }
 
+  .projects section {
+    display: flex;
+    align-items: flex-start;
+  }
 
-  /* assign max widths to all
-     elements below to keep the 
-     background colors spanning 
-     across the screen */
+  .project-image {
+    flex-shrink: 9;
+  }
+
+  .details {
+    padding-left: 30px;
+    flex-shrink: 10;
+}
+
+
+  /* assign max widths to all elements below to keep the 
+     background colors spanning across the screen */
   
-  header,nav ul, h3, p, 
+  header, nav ul, h3, p, 
   .flex-container-skills,
-  .contact-icons,
-  .contact-message {
+  .contact-message,
+  .projects section {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
