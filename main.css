@@ -421,6 +421,26 @@ footer {
   background-color: rgb(255, 255, 255);
 }
 
+@media (max-width: 350px) {  
+  h1, h3 {
+    font-size: 26px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  
+  .skills-item {
+    width: 124px;
+    margin: 12px 0;
+}
+
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { /* IF 576px is modified, change in script.js as well */
   html, body {
