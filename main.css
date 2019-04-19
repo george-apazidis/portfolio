@@ -437,7 +437,7 @@ footer {
     background: none;
     padding-bottom: 0px;
     padding-left: 3%;
-    overflow: auto;
+    /* overflow: auto; */ /* messes up mobile animation on mobile */
   }
 
   #header-nav {
