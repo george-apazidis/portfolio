@@ -5,7 +5,8 @@ function navClicks () {
     $('.burg, nav a').click(function () {
         
         // do only if mobile menu is active
-        if ($(window).width() < 576) {
+        if ($(window).outerWidth() < 576) {
+
             // animate icon
             animateMobileIcon();
             
