@@ -1,3 +1,4 @@
+"use strict";
 
 // mobile icon click
 function navClicks () {
@@ -23,7 +24,6 @@ function navBarShowHide () {
 function animateMobileIcon () {
     $('.burg').stop().toggleClass('burg-close');
 }
-
 
 function handleClicks() {
     navClicks();
