@@ -127,19 +127,21 @@ function anchorClicks () {
     });
 }
 
-function logoHover () {
-    
-        $("header img, .navLogo").hover(function(){
-            $(this).attr("src", "images/george-apazidis-blue2-shades.png");
-        }, function(){
-            $(this).attr("src", "images/george-apazidis-blue2.png");
-        });
+function logoClick () {
+    $('header img, .navLogo').on({
+        'click': function() {
+             var src = ($(this).attr('src') === 'images/george-apazidis-blue2-shades.png')
+                 ? 'images/george-apazidis-blue2.png'
+                 : 'images/george-apazidis-blue2-shades.png';
+             $(this).attr('src', src);
+         }
+    });
 }
 
 function handleClicks() {
     navClicks();
     anchorClicks();
-    logoHover();
+    logoClick();
 }
 
 $(handleClicks);
