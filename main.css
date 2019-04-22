@@ -99,7 +99,7 @@ button {
 #header-nav {
   background-color: #0077B5;
   position: fixed;
-  top: 0;
+  top: -1px; /* fix for iphone chrome bug */
   left: 0;
   right: 0;
   padding: 10px 20px;
@@ -479,7 +479,7 @@ footer {
     position: -ms-sticky;
     position: sticky;
     clear: both;
-    top: 0px;
+    top: -1px; /* fix for iphone chrome bug */
   }
 
   #header-nav h1 {
