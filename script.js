@@ -131,8 +131,8 @@ function logoClick () {
     $('header img, .navLogo').on({
         'click': function() {
              var src = ($(this).attr('src') === 'images/george-apazidis-blue2-shades.png')
-                 ? 'images/george-apazidis-blue2.png'
-                 : 'images/george-apazidis-blue2-shades.png';
+                 ? 'images/george-apazidis-blue5.png'
+                 : 'images/george-apazidis-blue5-shades.png';
              $(this).attr('src', src);
          }
     });
