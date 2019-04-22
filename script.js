@@ -87,12 +87,8 @@ function animateHeader () {
                 // add class to animate header elements via CSS
                 $('header').addClass('animate');
 
-                // add nav logo
-                $('nav ul').prepend(`<img class="navLogo" src="images/george-apazidis-blue.png" alt="George Apazidis">`)
-
                 // add class to animate nav via CSS
-                // use setTimeout to allow logo to be added to the DOM first (previous line) then animate
-                 setTimeout(`$('nav').addClass('animate');`, 50);
+                $('nav').addClass('animate');
             }
         }
         else {
@@ -104,9 +100,6 @@ function animateHeader () {
 
                 // animate header elements back to original locations
                 $('header, nav').removeClass('animate');
-
-                // after navLogo animation, remove from DOM
-                setTimeout(`$('.navLogo').remove();`, 300);
             
             }
         }
@@ -134,9 +127,19 @@ function anchorClicks () {
     });
 }
 
+function logoHover () {
+    
+        $("header img, .navLogo").hover(function(){
+            $(this).attr("src", "images/george-apazidis-blue2-shades.png");
+        }, function(){
+            $(this).attr("src", "images/george-apazidis-blue2.png");
+        });
+}
+
 function handleClicks() {
     navClicks();
     anchorClicks();
+    logoHover();
 }
 
 $(handleClicks);

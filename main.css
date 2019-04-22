@@ -165,7 +165,7 @@ nav li {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-nav li:first-child {
+nav li:first-child, nav li:nth-child(2) {
   border-top: none;
 }
 
