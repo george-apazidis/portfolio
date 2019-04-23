@@ -88,10 +88,12 @@ p {
   font-size: 18px;
 }
 
-button {
+button, 
+.btns a {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+  text-decoration: none;
 }
 
 /* Start header styles */
@@ -288,8 +290,8 @@ section img {
   width: 47%;
 }
 
-button {
-  width: 100%;
+.btns a {
+  width: 47%;
   font-size: 16px;
   height: 46px;
   margin: 20px 0px 0px 0px;
@@ -301,9 +303,12 @@ button {
   transition: all 0.3s;
   position: relative;
   padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-button:hover {
+ 
+.btns a:hover {
   background-color: rgb(45, 139, 202);
   text-decoration: underline;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
@@ -311,7 +316,7 @@ button:hover {
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-button::before {
+.btns a::before {
   position: absolute;
   height: 100%;
   left: 0;
@@ -328,7 +333,7 @@ button::before {
   font-weight: 900;
 }
 
-button::after {
+.btns a::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -348,13 +353,21 @@ button::after {
   transform: rotate(45deg);
 }
 
-button:hover:after {
+.btns a:hover:after {
   left: 39px;
 }
 
-.projects button span {
+.btns a  {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
+}
+
+.btns .fa::before {
+  font-family: "Font Awesome 5 Free";
+}
+
+.btns .fab::before {
+  font-family: "Font Awesome 5 Brands";
 }
 
 .skills h3 {
