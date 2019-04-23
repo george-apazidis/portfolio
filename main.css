@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  /* scroll-behavior: smooth; */
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -13,7 +9,6 @@ body {
   text-align: center;
   line-height: 1.5;
   padding-top:70px;
-  /* scroll-behavior: smooth; */
 }
 
 header {
@@ -231,7 +226,6 @@ nav a:hover {
 
 section {
   padding: 40px 20px 80px 20px;
-  /* scroll-behavior: smooth; */
 }
 
 section img {
@@ -492,7 +486,7 @@ footer {
     position: -ms-sticky;
     position: sticky;
     clear: both;
-    top: -1px; /* fix for iphone chrome bug */
+    top: -1px; /* fix for iphone chrome bug where you can see small gap when scrolling */
   }
 
   #header-nav h1 {
@@ -531,7 +525,7 @@ footer {
   }
 
   nav {
-    display: block !important; /* fringe case where the nav is hidden via jQuery on mobile menu, then browser is resized. */
+    display: block !important;  /* fix for fringe case where the nav is hidden via jQuery (.slideToggle) on mobile menu, then browser is resized. */
     text-align: center;
     padding-top: 0px;
   }
@@ -641,11 +635,11 @@ footer {
     width: 0px;
     margin-top: 24px;
     display: block;
+    /* the below creates a 2px border around the circle of the logo. */
     -webkit-filter: drop-shadow(2px 2px 0 white)
-                drop-shadow(-2px 2px 0 white)
-                drop-shadow(2px -2px 0 white)
-                drop-shadow(-2px -2px 0 white);
-
+                    drop-shadow(-2px 2px 0 white)
+                    drop-shadow(2px -2px 0 white)
+                    drop-shadow(-2px -2px 0 white);
     filter: drop-shadow(2px 2px 0 white)
             drop-shadow(-2px 2px 0 white)
             drop-shadow(2px -2px 0 white)
@@ -654,7 +648,6 @@ footer {
   
   /* assign max widths to all elements below to keep the 
      background colors spanning across the screen */
-  
   header, nav ul, h3, p, 
   .flex-container-skills,
   .contact-message,

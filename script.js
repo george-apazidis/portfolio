@@ -130,7 +130,7 @@ function anchorClicks () {
 function logoClick () {
     $('header img, .navLogo').on({
         'click': function() {
-             var src = ($(this).attr('src') === 'images/george-apazidis-blue5-shades.png')
+             let src = ($(this).attr('src') === 'images/george-apazidis-blue5-shades.png')
                  ? 'images/george-apazidis-blue5.png'
                  : 'images/george-apazidis-blue5-shades.png';
              $(this).attr('src', src);
