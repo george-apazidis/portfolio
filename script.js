@@ -1,77 +1,11 @@
 "use strict";
 
-// mobile icon click
-function navClicks () {
-    $('.burg, nav a').click(function () {
-        
-        // do only if mobile menu is active
-        if ($(window).outerWidth() < 576) {
-
-            // animate icon
-            animateMobileIcon();
-            
-            // show or hide menu
-            navBarShowHide();  
-        }
-    });
-}
-
-// slide menu
-function navBarShowHide () {
-	$('nav').stop().slideToggle('fast');
-}
-
-// mobile icon animation
-function animateMobileIcon () {
-    $('.burg').stop().toggleClass('burg-close');
-}
-
-
 // variables for throttling
 let scrollTimeout;
 let throttle = 200;
 
 // define boolean for largest breakpoint to be used scroll listener event
 let largeBreakPoint = $(this).outerWidth() >= 768 ? true : false ;
-
-// throttle function for browser resize
-$(window).on('resize', function(){
-
-    //console.log('resize NO throttle');
-
-    if (!scrollTimeout) {
-        scrollTimeout = setTimeout(function () {
-
-            //console.log('resize WITH throttle');
-
-            // recalculate this variable
-            largeBreakPoint = $(this).outerWidth() >= 768 ? true : false ;
-
-            // run animations when browser is resized
-            animateHeader();
-
-            scrollTimeout = null;
-        }, throttle);
-    }
-});
-
-// throttle function for browser scroll
-$(window).on('scroll', function () {
-
-    //console.log('scroll NO throttle');
-
-    if (!scrollTimeout) {
-        scrollTimeout = setTimeout(function () {
-
-            //console.log('scroll WITH throttle');
-            
-            // run animations when browser is scrolled
-            animateHeader();
-
-            scrollTimeout = null;
-        }, throttle);
-    }
-});
 
 // function to animate the header/nav when the browser is scrolled down 80px only on largest breakpoint
 function animateHeader () {
@@ -100,48 +34,89 @@ function animateHeader () {
 
                 // animate header elements back to original locations
                 $('header, nav').removeClass('animate');
-            
             }
         }
     }
 }
 
+// throttle function for browser resize
+$(window).on('resize' , function(){         /* $(window).on('resize, scroll' , function(){ */
+
+    // console.log('resize NO throttle');
+    if (!scrollTimeout) {
+        scrollTimeout = setTimeout(function () {
+
+            // console.log('resize WITH throttle');
+
+            // recalculate this variable
+            largeBreakPoint = $(this).outerWidth() >= 768 ? true : false ;
+
+            // run animations when browser is resized
+            animateHeader();
+
+            scrollTimeout = null;
+        }, throttle);
+    }
+});
+
+// throttle function for browser scroll
+$(window).on('scroll', function () {
+
+    //  console.log('scroll NO throttle');
+
+    if (!scrollTimeout) {
+        scrollTimeout = setTimeout(function () {
+
+            // console.log('scroll WITH throttle');
+            
+            // run animations when browser is scrolled
+            animateHeader();
+
+            scrollTimeout = null;
+        }, throttle);
+    }
+});
+
+// mobile icon click
+$('.burg, nav a').click(function () {
+    
+    // do only if mobile menu is active
+    if ($(window).outerWidth() < 576) {
+
+        // animate icon
+        $('.burg').stop().toggleClass('burg-close');
+        
+        // show or hide menu
+        $('nav').stop().slideToggle('fast'); 
+    }
+});
+
 // function for smooth scrolling
-function anchorClicks () {
-    $('a[href^="#"]').on('click',function (e) 
-    {
-        // e.preventDefault();
+$('a[href^="#"]').on('click',function (e) 
+{
+    //  this conflicts with the offset
+    //  e.preventDefault(); 
 
-        let target = this.hash,
-        $target = $(target);
+    let target = this.hash,
+    $target = $(target);
 
-        // set offset of larg breakpoint to 60px, otherwise keep at 0
-        let offsetNum = (largeBreakPoint == true ) ?  60 :  0;
+    // set offset of larg breakpoint to 60px, otherwise keep at 0
+    let offsetNum = (largeBreakPoint == true ) ?  60 :  0;
 
-        // offset scroll function
-        $('html, body')
-            .stop()
-            .animate({ 'scrollTop': $target.offset().top - offsetNum }, 900, 'swing', function () {
-                window.location.hash = target;
-            });
-    });
-}
+    // offset scroll function
+    $('html, body')
+        .stop()
+        // animate the scroll to top of page minus the offset 
+        .animate({ 'scrollTop': $target.offset().top - offsetNum }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+});
 
-function logoClick () {
-    $('header img, .navLogo').on({
-        'click': function() {
-             let src = ($(this).attr('src') === 'images/george-apazidis-blue5-shades.png')
-                 ? 'images/george-apazidis-blue5.png'
-                 : 'images/george-apazidis-blue5-shades.png';
-             $(this).attr('src', src);
-         }
-    });
-}
-
-function handleClicks() {
-    navClicks();
-    anchorClicks();
-    logoClick();
-}
-
-$(handleClicks);
+$('header img, .navLogo').on({
+    'click': function() {
+            let src = ($(this).attr('src') === 'images/george-apazidis-blue5-shades.png')
+                ? 'images/george-apazidis-blue5.png'
+                : 'images/george-apazidis-blue5-shades.png';
+            $(this).attr('src', src);
+        }
+});
