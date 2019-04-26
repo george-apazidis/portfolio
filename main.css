@@ -166,6 +166,10 @@ nav li:first-child, nav li:nth-child(2) {
   border-top: none;
 }
 
+nav li:first-child {
+  flex: 0;
+}
+
 nav a {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -604,6 +608,7 @@ footer {
   #header-nav {
     top: 24px;
   }
+
   .projects section {
     display: flex;
     align-items: flex-start;
