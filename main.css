@@ -91,12 +91,21 @@ button,
   text-decoration: none;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background: rgb(233, 233, 233);
+  max-width: 900px;
+  margin: 40px auto;
+}
+
 /* Start header styles */
 
 #header-nav {
   background-color: #0077b5;
   position: fixed;
-  top: -1px; /* fix for iphone chrome bug */
+  top: -1px;
+  /* fix for iphone chrome bug */
   left: 0;
   right: 0;
   padding: 10px 20px;
@@ -444,6 +453,7 @@ footer {
 }
 
 @media (max-width: 350px) {
+
   h1,
   h3 {
     font-size: 26px;
@@ -465,6 +475,7 @@ footer {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+
   /* IF 576px is modified, change in script.js as well */
   html,
   body {
@@ -493,7 +504,8 @@ footer {
     position: -ms-sticky;
     position: sticky;
     clear: both;
-    top: -1px; /* fix for iphone chrome bug where you can see small gap when scrolling */
+    top: -1px;
+    /* fix for iphone chrome bug where you can see small gap when scrolling */
   }
 
   #header-nav h1 {
@@ -532,7 +544,8 @@ footer {
   }
 
   nav {
-    display: block !important; /* fix for fringe case where the nav is hidden via jQuery (.slideToggle) on mobile menu, then browser is resized. */
+    display: block !important;
+    /* fix for fringe case where the nav is hidden via jQuery (.slideToggle) on mobile menu, then browser is resized. */
     text-align: center;
     padding-top: 0px;
   }
@@ -676,10 +689,8 @@ footer {
     margin-top: -24px;
     display: block;
     /* the below creates a 2px border around the circle of the logo. */
-    -webkit-filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white)
-      drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
-    filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white)
-      drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
+    -webkit-filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
+    filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
   }
 
   nav ul {
