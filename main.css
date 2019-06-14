@@ -700,4 +700,8 @@ footer {
   nav.animate ul {
     padding-left: 30px;
   }
+
+  .skills-item {
+    width: 20%;
+  }
 }
