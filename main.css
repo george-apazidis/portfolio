@@ -389,6 +389,10 @@ section img {
   padding: 0;
 }
 
+#skills {
+  background-color: #fff;
+}
+
 .skills-item {
   width: 140px;
   margin: 12px 0;
