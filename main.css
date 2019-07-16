@@ -139,6 +139,7 @@ header img {
   margin: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  border-radius: 50%;
 }
 
 nav,
@@ -661,6 +662,7 @@ footer {
     display: block;
     -webkit-filter: none;
     filter: none;
+    border-radius: 50%;
   }
 
   /* assign max widths to all elements below to keep the 
@@ -695,6 +697,7 @@ footer {
     /* the below creates a 2px border around the circle of the logo. */
     -webkit-filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
     filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
+    border-radius: 50%;
   }
 
   nav ul {
