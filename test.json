@@ -38,14 +38,39 @@
     ],
     "pages": [
       {
-        "title": "2020 Lorem Ipsum",
-        "url": "/2020_links",
-        "sort_order": "5"
+        "section" : "Access",
+        "links" : [
+          {
+            "title": "Location Qualification",
+            "url": "/location-qualification",
+            "sort_order": "5"
+          },
+          {
+            "title": "Ethernet Order Samples",
+            "url": "/ethernet",
+            "sort_order": "5"
+          },
+          {
+            "title": "Ethernet NC/NCI/SECNCI",
+            "url": "/ethernet",
+            "sort_order": "5"
+          } 
+        ]
       },
       {
-        "title": "2020 Lorem Ipsum",
-        "url": "/2020_links2",
-        "sort_order": "5"
+        "section" : "Local",
+        "links" : [
+          {
+            "title": "Voice Services",
+            "url": "/voice",
+            "sort_order": "5"
+          },
+          {
+            "title": "Broadband Services",
+            "url": "/2020_links2",
+            "sort_order": "5"
+          }
+        ]
       }
     ]
   }
