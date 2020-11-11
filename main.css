@@ -190,7 +190,6 @@ nav a {
 }
 
 nav a:hover {
-  opacity: 30%;
   background-color: rgb(45, 139, 202);
 }
 
