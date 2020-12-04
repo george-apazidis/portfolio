@@ -3,12 +3,18 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    min-height: -webkit-fill-available;
+}
+
 body { 
     font-family: 'Muli', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    min-height: -webkit-fill-available;
     overflow: hidden;
     margin: 0;
 }
