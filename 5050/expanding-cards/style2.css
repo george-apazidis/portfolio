@@ -33,11 +33,11 @@ body {
     flex: 0.5;
     margin: 10px;
     position: relative;
-    transition: all 0.7s ease-in;
-    -moz-transition: all 0.7s ease-in;
-    -webkit-transition: all 0.7s ease-in;
-    -o-transition: all 0.7s ease-in;
-    -ms-transition: all 0.7s ease-in;
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
 }
 
 .panel h3 {
@@ -56,11 +56,11 @@ body {
 .panel.active h3 {
     opacity: 1;
     /* add fade in effect + delay to fix flow issue */
-    transition: opacity 0.3s ease-in 0.4s;
-    -moz-transition: opacity 0.3s ease-in 0.4s;
-    -webkit-transition: opacity 0.3s ease-in 0.4s;
-    -o-transition: opacity 0.3s ease-in 0.4s;
-    -ms-transition: opacity 0.3s ease-in 0.4s;
+    transition: all 0.5s ease-in 0.5s;
+    -moz-transition: all 0.5s ease-in 0.5;
+    -webkit-transition: all 0.5s ease-in 0.5s;
+    -o-transition: all 0.5s ease-in 0.5s;
+    -ms-transition: all 0.5s ease-in 0.5s;
 
 }
 
