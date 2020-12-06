@@ -52,7 +52,11 @@ body {
 .panel.active h3 {
     opacity: 1;
     /* add fade in effect + delay to fix flow issue */
-    transition: all 0.3s ease-in 1s;
+    transition: all 0.3s ease-in;
+    -webkit-transition-delay: 500ms;
+    -moz-transition-delay: 500ms;
+    -o-transition-delay: 500ms;
+    transition-delay: 500ms;
 }
 
 @media(max-width: 480px) {
