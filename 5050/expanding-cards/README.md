@@ -1,7 +1,7 @@
 # Expanding Cards
 
 This project contains a set of cards with one 'active' card that is expanded.
-The set of cards behave like an accordion with only one active card expanded at once.
+The set of cards behaves like an accordion with only one active card expanded at once.
 When a non-active card is clicked, it then gets expanded, while causing the previous active card to collapse.
 
 
