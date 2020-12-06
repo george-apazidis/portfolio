@@ -4,23 +4,21 @@
     box-sizing: border-box;
 }
 
-html {
-    min-height: -webkit-fill-available;
-}
-
 body { 
     font-family: 'Muli', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    min-height: -webkit-fill-available;
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
     margin: 0;
 }
 
 .container {
     display: flex;
+    align-items: center;
+    height: 50%;
     width: 90vw;
 }
 
@@ -28,14 +26,18 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100%;
     border-radius: 30px;
     color: #fff;
     cursor: pointer;
     flex: 0.5;
     margin: 10px;
     position: relative;
-    transition: flex 0.7s ease-in;
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
 }
 
 .panel h3 {
@@ -45,6 +47,7 @@ body {
     left: 20px;
     margin: 0;
     opacity: 0;
+    visibility: hidden;
 }
 
 .panel.active {
@@ -53,8 +56,16 @@ body {
 
 .panel.active h3 {
     opacity: 1;
+    visibility: visible;
     /* add fade in effect + delay to fix flow issue */
-    transition: opacity 0.3s ease-in 0.4s;
+    transition: all 0.8s ease-in ;
+    -moz-transition: all 0.8s ease-in ;
+    -webkit-transition: all 0.8s ease-in ;
+    -o-transition: all 0.8s ease-in ;
+    -ms-transition: all 0.8s ease-in ;
+
+    white-space: nowrap;
+
 }
 
 @media(max-width: 480px) {
