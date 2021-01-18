@@ -8,5 +8,5 @@ This is the main repository for all of the projects.
 | 02  | [Progress Steps](https://github.com/george-apazidis/portfolio/tree/master/5050/progress-steps)                                        | [Live Demo](https://geoapa.com/5050/progress-steps/)    
 
 
-# Dev roadmap
-*include thumbnails to README
+### Dev roadmap
+* thumbnails to README
