@@ -318,12 +318,17 @@ section img {
   align-items: center;
 }
 
+.btns a:active {
+    transform: scale(0.95);
+    transition: 0.1s ease;
+}
+
 .btns a:hover {
   background-color: rgb(45, 139, 202);
   text-decoration: underline;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .btns a::before {
@@ -435,6 +440,11 @@ figcaption {
   font-size: 60px;
   text-decoration: none;
   color: #fff;
+}
+
+.contact-icons a:active {
+    transform: scale(0.95);
+    transition: 0.1s ease;
 }
 
 .contact-icons a:hover {
