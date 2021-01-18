@@ -33,27 +33,28 @@ body {
     width: 350px;
 }
 
-.progress-container::before {
-    content: '';
-    background-color: var(--line-border-empty);
+.progress-container::before,
+.progress {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
     height: 4px;
+    transform: translateY(-50%); /* palce exactly in middle */
+    z-index: -1;
+}
+
+/* empty gray line */
+.progress-container::before {
+    content: '';
+    background-color: var(--line-border-empty);
     width: 100%;
     z-index: -1;
 }
 
+/* active progress line */
 .progress {
     background-color: var(--line-border-fill);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 4px;
     width: 0%;
-    z-index: -1;
     transition: .4s ease;
 }
 
