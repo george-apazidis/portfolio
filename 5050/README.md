@@ -9,4 +9,6 @@ This is the main repository for all of the projects.
 
 
 ### Dev roadmap
+* create HTML landing page
+* link landing page from portfolio site
 * thumbnails to README
