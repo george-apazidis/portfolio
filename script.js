@@ -112,3 +112,5 @@ $('a[href^="#"]').on('click', function (e) {
             window.location.hash = target;
         });
 });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
