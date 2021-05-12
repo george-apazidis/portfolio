@@ -16,6 +16,7 @@
 ## Development Road Map
 
 Features for future iterations include:
-* create boundary around canvas for the drawing to 'stop', currently the drawing goes off the canvas
+
 * convert to responsive
-* add buttons to UK for arrow keys (up, down, left, right)
+* add buttons to UI for arrow keys (up, down, left, right)
+* create boundary around canvas for the drawing to 'stop'; currently the drawing runs off the canvas although the path is hidden
