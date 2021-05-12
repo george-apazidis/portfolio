@@ -1,0 +1,104 @@
+._1XSYYK3JvrCuuiuW6pr6Tm{
+    font-family:nexa bold;font-size:1.6rem;font-weight:400;color:#58595b;margin-top:0;margin-bottom:.5rem}input[type=number],input[type=text]{font-size:1.6rem;font-weight:400;line-height:1.25;color:#58595b;height:50px;margin-bottom:1.5rem;padding:1.5rem 1.5rem;background-color:#fff;border:1px solid #ccc;border-radius:.4rem;-webkit-box-shadow:none;box-shadow:none;-webkit-transition:#ccc .25s ease-in-out;transition:#ccc .25s ease-in-out}input[type=number]::placeholder,input[type=text]::placeholder{color:#a5a6a7}input[type=number]:hover,input[type=text]:hover{outline:none;border-color:#161617}input[type=number]:focus,input[type=text]:focus{outline:none;border-color:#74cdde;box-shadow:none}input[type=number]{font-family:avenir medium}input[type=checkbox]{position:relative;bottom:0;display:inline-block;width:17px;height:17px;margin:0 1rem .125rem 0 !important;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;appearance:none;cursor:pointer}input[type=checkbox]::before{position:absolute;display:flex;content:"";width:18px;height:18px;background-color:#fff;border:1px solid #707070;border-radius:.4rem}input[type=checkbox]:checked::after{position:absolute;display:flex;align-items:center;justify-content:center;font-family:FontAwesome;font-size:1.2rem;color:#fff;content:"";width:17px;height:17px;padding:1px;background-color:#17355e;border-radius:.2rem}input[type=checkbox]._1T0mItC3wqZ3ejMUeFCC9V::-ms-expand{display:none}._3_7bgPQ6hgM66mZdJ6dQ8L{position:relative;top:-2px;display:inline-flex;align-items:center;justify-content:center;font-size:.8rem !important;color:#58595b;text-align:center;width:16px;height:16px;margin-left:1rem;padding:3px 0;border:1px solid #58595b;border-radius:50%;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}._3_7bgPQ6hgM66mZdJ6dQ8L:hover{color:#fff;background-color:#df4841;border-color:#df4841}label._1UwtPHgXENRp12fyMSi1zu{font-family:nexa;font-size:1.4rem;font-weight:400;line-height:1.25;color:#d9272d;margin-bottom:1.5rem}.Fe_IsiDN4OwOrQBnvl5aV{color:#d9272d}input[type=number]._1UwtPHgXENRp12fyMSi1zu,input[type=text]._1UwtPHgXENRp12fyMSi1zu{margin-bottom:.5rem;border-color:#d9272d}._1CFmMzurQQDfnkdDwA_4sR{color:#d9272d} 
+
+
+
+/* Current Frontier "Payment amount"
+
+webfonts.css  
+*/
+
+@font-face {
+    font-family: "nexa bold";
+    src: url("/fonts/nexa/nexabold-webfont.eot");
+    src: url("/fonts/nexa/nexabold-webfont.eot?#iefix") format("embedded-opentype"),
+    
+    url("/fonts/nexa/nexabold-webfont.woff2") format("woff2"),
+    
+    url("/fonts/nexa/nexabold-webfont.woff") format("woff"),
+    
+    url("/fonts/nexa/nexabold-webfont.ttf") format("truetype"),
+    
+    url("/fonts/nexa/nexabold-webfont.svg#nexabold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+Fonts used on frontier side
+https://qat01.frontier.com/fonts/nexa/nexabold-webfont.eot
+https://qat01.frontier.com/fonts/nexa/nexabold-webfont.woff2
+https://qat01.frontier.com/fonts/nexa/nexabold-webfont.woff
+https://qat01.frontier.com/fonts/nexa/nexabold-webfont.ttf
+https://qat01.frontier.com/fonts/nexa/nexabold-webfont.svg#nexabold
+
+
+*/
+
+/*
+Fonts used on FiServ side
+
+https://billerpayapi.clienttestmatrix.com/BillerCSS/Frontier.css
+
+@font-face {
+    font-family: 'nexa';
+    src: url('../BillerCSS/Fonts/NexaW01-Bold.eot');
+    src: url('../BillerCSS/Fonts/NexaW01-Bold.eot?#iefix') format('embedded-opentype'),
+     url('../BillerCSS/Fonts/NexaW01-Bold.woff2') format('woff2'),
+     url('../BillerCSS/Fonts/NexaW01-Bold.woff') format('woff'),
+     url('../BillerCSS/Fonts/NexaW01-Bold.ttf') format('truetype'),
+     url('../BillerCSS/Fonts/NexaW01-Bold.svg#nexabold') format('svg');
+}
+*/
+
+/* 
+
+AWS fonts:
+https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabold-webfont.eot
+https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabold-webfont.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabold-webfont.woff
+https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabold-webfont.ttf
+https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabold-webfont.svg
+
+*/
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Light.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Light.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-LightOblique.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-LightOblique.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-LightOblique.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-LightOblique.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Book.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Book.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-BookOblique.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-BookOblique.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Roman.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Roman.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Oblique.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Oblique.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Medium.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Medium.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-MediumOblique.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-MediumOblique.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Heavy.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Heavy.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-HeavyOblique.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-HeavyOblique.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Black.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-Black.woff
+
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-BlackOblique.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-BlackOblique.woff
+    
+    
