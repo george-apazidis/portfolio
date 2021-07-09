@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENT Blogs - RTE Best practices</title>
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(23, 43, 77);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.42857;
+            text-decoration-skip-ink: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+        * {
+            box-sizing: inherit;
+        }
+
+        html, body, p, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, img, pre, form, fieldset {
+            margin: 0px;
+            padding: 0px;
+        }
+        p, ul, ol, dl, h1, h2, h3, h4, h5, h6, blockquote, pre, form, table {
+            margin: 12px 0px 0px;
+        }
+
+        h1 {
+            font-size: 2.07143em;
+            font-style: inherit;
+            line-height: 1.10345;
+            color: rgb(23, 43, 77);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-top: 40px;
+        }
+
+
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            font-weight: 400;
+            color: rgb(23, 43, 77);
+        }
+
+        h1, .h1 {
+            font-size: 29px;
+            line-height: 1.10345;
+        }
+        h2, .h2 {
+            font-size: 24px;
+            line-height: 1.16667;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+        #left-sidebar {
+            border-right: 1px solid rgb(235, 236, 240);
+            flex-shrink: 0;
+            display: grid;
+        }
+        .css-zvta6n {
+            grid-area: content;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100%;
+            position: relative;
+        }
+        .css-5hcsma {
+            position: relative;
+            width: 272px;
+            transition: width 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
+            z-index: 1;
+            margin-left: 0px;
+        }
+        .css-vnv8pl {
+            height: 100%;
+        }
+
+        .css-1hswjyz {
+            margin-bottom: 16px;
+            display: block;
+        }
+        .css-1ncikhj:first-of-type {
+            margin-top: 32px;
+        }
+        .css-1ncikhj {
+            padding-left: 32px;
+            display: flex;
+            height: 32px;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+        .headline1, .headline2, .headline3, .hero-text {
+            font-family: "Charlie Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            font-weight: 400;
+            color: rgb(23, 43, 77);
+        }
+
+        .headline1 {
+            font-size: 36px;
+            line-height: 1.22222;
+        }
+
+        .headline3 {
+            font-family: "Charlie Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 1.33333;
+            letter-spacing: 1px;
+        }
+
+        .css-zi4y9x {
+            height: 32px;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            padding-top: 8px;
+            padding-right: 20px;
+            padding-bottom: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            box-sizing: border-box;
+            user-select: none;
+            color: rgb(52, 69, 99) !important;
+            display: flex !important;
+            padding-left: 32px !important;
+        }
+
+        .css-zi4y9x:hover {
+            color: rgb(23, 43, 77);
+            background-color: rgb(244, 245, 247);
+            text-decoration: none;
+        }
+
+        .css-zi4y9x:focus {
+            outline: none;
+            box-shadow: rgb(76 154 255) 0px 0px 0px 2px inset;
+        }
+
+        .css-zi4y9x:active {
+            box-shadow: none;
+            color: rgb(23, 43, 77);
+            background-color: rgb(235, 236, 240);
+        }
+
+        .css-1f63klf {
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            min-width: 0;
+            -webkit-transition: margin-left 300ms cubic-bezier(0.2,0,0,1) 0s;
+            transition: margin-left 300ms cubic-bezier(0.2,0,0,1) 0s;
+            margin-left: 0;
+        }
+
+        .css-hrba51 {
+            grid-area: main;
+            display: grid;
+            position: relative;
+            height: 100%;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: minmax(640px,960px) 1fr;
+            grid-template-areas:
+                'hero hero'
+                'content nav'
+                'footer footer';
+        }
+
+        .css-10nnk0m {
+            padding-left: 80px;
+            display: flex;
+            background-color: rgb(250, 251, 252);
+            height: 224px;
+            grid-area: hero / hero / hero / hero;
+        }
+        .css-1sokb2 {
+            height: 100%;
+            padding-top: 48px;
+            max-width: 640px;
+        }
+        h1:first-child, .h1:first-child, h2:first-child, .h2:first-child, h3:first-child, .h3:first-child, h4:first-child, .h4:first-child, h5:first-child, .h5:first-child {
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+        .lg {
+            font-size: 16px;
+        }
+
+        .css-y1upjj {
+            color: rgb(80, 95, 121);
+        }
+
+        .css-1olh7o0 {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
+            grid-auto-rows: max-content;
+            grid-area: content / content / content / content;
+            padding: 32px 80px 80px;
+            margin-top: 0px;
+            max-width: 960px;
+            position: relative;
+        }
+
+        .css-1olh7o0 > * {
+            grid-column: 1 / span 12;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .css-io4cfg {
+            position: relative;
+            padding-top: var(--section-spacing,22px);
+            margin-top: 0px !important;
+        }
+
+        .css-1olh7o0 > h2 {
+            margin-top: 32px;
+        }
+
+        div[hidden] + h2, div[hidden] + h3, [data-docs-tabs] + h2, [data-docs-tabs] + h3 {
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        .css-6uarjm {
+            z-index: 1;
+            border-radius: 4px;
+            box-shadow: rgb(235 236 240) 0px 0px 0px 1.2px;
+            width: 100%;
+        }
+
+        .css-iraei6 {
+            padding: 24px;
+            background-color: rgb(255, 255, 255);
+            background-image: linear-gradient(45deg, rgb(249, 249, 250) 25%, transparent 25%), linear-gradient(135deg, rgb(249, 249, 250) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgb(249, 249, 250) 75%), linear-gradient(135deg, transparent 75%, rgb(249, 249, 250) 75%);
+            background-size: 20px 20px;
+            background-position: 0px 0px, 10px 0px, 10px -10px, 0px 10px;
+            border-radius: 3px 3px 0px 0px;
+        }
+    </style>
+
+<link rel="stylesheet" media="all" href="https://enterprise.frontier.com/static/css/common.css?cachebust=none" />
+
+<style>
+
+    /* Get fonts from AWS */
+@font-face {
+  font-family: "avenir black";
+  src: url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/AvenirLT-Black.woff2) 
+    format("woff2"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/AvenirLT-Black.woff) 
+    format("woff"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/AvenirLT-Black.ttf) 
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+
+@font-face {
+  font-family: 'Nexa';
+  src: url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexablack-webfont.woff2) format("woff2"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexablack-webfont.woff) format("woff"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexablack-webfont.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexaheavy-webfont.woff2) format("woff2"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexaheavy-webfont.woff) format("woff"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexaheavy-webfont.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexaxbold-webfont.woff2) format("woff2"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexaxbold-webfont.woff) format("woff"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexaxbold-webfont.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabold-webfont.woff2) format("woff2"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabold-webfont.woff) format("woff"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabold-webfont.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexa-webfont.woff2) format("woff2"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexa-webfont.woff) format("woff"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexa-webfont.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabook-webfont.woff2) format("woff2"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabook-webfont.woff) format("woff"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexabook-webfont.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexalight-webfont.woff2) format("woff2"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexalight-webfont.woff) format("woff"), url(https://d2w3zkq33l1i26.cloudfront.net/fonts/nexa/nexalight-webfont.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+</style>
+
+</head>
+<body>
+    
+
+
+<div class="css-zvta6n">
+    <div id="left-sidebar" class="css-5hcsma">
+        <div class="css-vnv8pl">
+            <div class="css-1hswjyz elr08ns0">
+                <div class="headline3 css-1ncikhj e1j3csf30">Components</div>
+                <a class="css-zi4y9x" draggable="false" aria-disabled="false" href="/components/avatar"><div class="css-1oyzili"><span class="css-ek7kgj"><span class="css-5mekwu" data-item-title="true">Blog Content</span></span></div></a>
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="main" data-ds--page-layout--slot="main" class="css-1f63klf">
+        <main class="css-hrba51 e1ha9sj90 p-0">
+            <div class="css-10nnk0m e1amxvdc0"><div class="css-1sokb2 e1amxvdc1"><h1 class="headline1 css-8kn4zf">Blog Content</h1><p class="lg css-y1upjj">Best practices for use in Blog RTE body content</p></div></div>
+            <div class="main-content css-1olh7o0 e1ha9sj91">
+                <h2 class="section-link css-io4cfg intersecting" id="size" style="--section-spacing:48px;">Paragraphs</h2>
+
+                <p>All blog paragraphs should be wrapped in &lt;p&gt; tags. <br>Do not use empty &lt;p&gt; tags or &lt;br&gt; tags to handle spacing.</p>
+                <div class="css-6uarjm e96t6160">
+                    <div aria-label="text field default example showcase" role="group" class="css-iraei6 esa31nl0">
+                        <!-- Demo here -->
+                        <!-- <div data-ds--text-field--container="true" class="css-13fq05f">
+                            <input name="basic" aria-label="default text field" data-ds--text-field--input="true" class="css-16kwnwk">
+                        </div> -->
+                        <div class="updated-blog-post-page">
+                            <article>
+                                <div class="container">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit non mollitia explicabo minima, possimus ut debitis tenetur accusantium in repellendus esse porro nobis autem cumque quia ipsum, error, fugiat nostrum! Aut delectus accusantium eius possimus dolorem deserunt saepe totam ratione quia tenetur? Tempore repudiandae</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div aria-label="text field default code example" role="group" class="css-1dnp1d9 eg3byl40">
+                        <div id="example-text-field-default">
+                            <span data-code-lang="tsx" data-ds--code--code-block="" class="prismjs css-n3f5th">
+                                <code class="language-tsx" style="white-space: pre;">
+                                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit non mollitia explicabo minima, possimus ut debitis tenetur accusantium in repellendus esse porro nobis autem cumque quia ipsum, error, fugiat nostrum!
+                                    Aut delectus accusantium eius possimus dolorem deserunt saepe totam ratione quia tenetur? Tempore repudiandae &lt;/p&gt;
+                                    
+                                </code>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+
+1.	Paragraphs
+2.	Bolding
+3.	Linking
+4.	super-scripts
+5.	headings
+6.	Bulleted lists
+7.	Ordered lists
+8.	CTA call out
+9.	Quote
+10.	indent/spacing tweaks
+
+
+</body>
+</html>

@@ -1,5 +1,8 @@
 ._1XSYYK3JvrCuuiuW6pr6Tm{
-    font-family:nexa bold;font-size:1.6rem;font-weight:400;color:#58595b;margin-top:0;margin-bottom:.5rem}input[type=number],input[type=text]{font-size:1.6rem;font-weight:400;line-height:1.25;color:#58595b;height:50px;margin-bottom:1.5rem;padding:1.5rem 1.5rem;background-color:#fff;border:1px solid #ccc;border-radius:.4rem;-webkit-box-shadow:none;box-shadow:none;-webkit-transition:#ccc .25s ease-in-out;transition:#ccc .25s ease-in-out}input[type=number]::placeholder,input[type=text]::placeholder{color:#a5a6a7}input[type=number]:hover,input[type=text]:hover{outline:none;border-color:#161617}input[type=number]:focus,input[type=text]:focus{outline:none;border-color:#74cdde;box-shadow:none}input[type=number]{font-family:avenir medium}input[type=checkbox]{position:relative;bottom:0;display:inline-block;width:17px;height:17px;margin:0 1rem .125rem 0 !important;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;appearance:none;cursor:pointer}input[type=checkbox]::before{position:absolute;display:flex;content:"";width:18px;height:18px;background-color:#fff;border:1px solid #707070;border-radius:.4rem}input[type=checkbox]:checked::after{position:absolute;display:flex;align-items:center;justify-content:center;font-family:FontAwesome;font-size:1.2rem;color:#fff;content:"";width:17px;height:17px;padding:1px;background-color:#17355e;border-radius:.2rem}input[type=checkbox]._1T0mItC3wqZ3ejMUeFCC9V::-ms-expand{display:none}._3_7bgPQ6hgM66mZdJ6dQ8L{position:relative;top:-2px;display:inline-flex;align-items:center;justify-content:center;font-size:.8rem !important;color:#58595b;text-align:center;width:16px;height:16px;margin-left:1rem;padding:3px 0;border:1px solid #58595b;border-radius:50%;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}._3_7bgPQ6hgM66mZdJ6dQ8L:hover{color:#fff;background-color:#df4841;border-color:#df4841}label._1UwtPHgXENRp12fyMSi1zu{font-family:nexa;font-size:1.4rem;font-weight:400;line-height:1.25;color:#d9272d;margin-bottom:1.5rem}.Fe_IsiDN4OwOrQBnvl5aV{color:#d9272d}input[type=number]._1UwtPHgXENRp12fyMSi1zu,input[type=text]._1UwtPHgXENRp12fyMSi1zu{margin-bottom:.5rem;border-color:#d9272d}._1CFmMzurQQDfnkdDwA_4sR{color:#d9272d} 
+    font-family:nexa bold;font-size:1.6rem;
+    font-weight:400;color:#58595b;margin-top:0;margin-bottom:.5rem}input[type=number],input[type=text]{font-size:1.6rem;
+        font-weight:400;line-height:1.25;color:#58595b;height:50px;margin-bottom:1.5rem;padding:1.5rem 1.5rem;background-color:#fff;border:1px solid #ccc;border-radius:.4rem;-webkit-box-shadow:none;box-shadow:none;-webkit-transition:#ccc .25s ease-in-out;transition:#ccc .25s ease-in-out}input[type=number]::placeholder,input[type=text]::placeholder{color:#a5a6a7}input[type=number]:hover,input[type=text]:hover{outline:none;border-color:#161617}input[type=number]:focus,input[type=text]:focus{outline:none;border-color:#74cdde;box-shadow:none}input[type=number]{font-family:avenir medium}input[type=checkbox]{position:relative;bottom:0;display:inline-block;width:17px;height:17px;margin:0 1rem .125rem 0 !important;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;appearance:none;cursor:pointer}input[type=checkbox]::before{position:absolute;display:flex;content:"";width:18px;height:18px;background-color:#fff;border:1px solid #707070;border-radius:.4rem}input[type=checkbox]:checked::after{position:absolute;display:flex;align-items:center;justify-content:center;font-family:FontAwesome;font-size:1.2rem;color:#fff;content:"";width:17px;height:17px;padding:1px;background-color:#17355e;border-radius:.2rem}input[type=checkbox]._1T0mItC3wqZ3ejMUeFCC9V::-ms-expand{display:none}._3_7bgPQ6hgM66mZdJ6dQ8L{position:relative;top:-2px;display:inline-flex;align-items:center;justify-content:center;font-size:.8rem !important;color:#58595b;text-align:center;width:16px;height:16px;margin-left:1rem;padding:3px 0;border:1px solid #58595b;border-radius:50%;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}._3_7bgPQ6hgM66mZdJ6dQ8L:hover{color:#fff;background-color:#df4841;border-color:#df4841}label._1UwtPHgXENRp12fyMSi1zu{font-family:nexa;font-size:1.4rem;
+        font-weight:400;line-height:1.25;color:#d9272d;margin-bottom:1.5rem}.Fe_IsiDN4OwOrQBnvl5aV{color:#d9272d}input[type=number]._1UwtPHgXENRp12fyMSi1zu,input[type=text]._1UwtPHgXENRp12fyMSi1zu{margin-bottom:.5rem;border-color:#d9272d}._1CFmMzurQQDfnkdDwA_4sR{color:#d9272d} 
 
 
 
@@ -102,3 +105,348 @@ https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-BlackOblique.woff2
 https://d2w3zkq33l1i26.cloudfront.net/fonts/avenir/AvenirLT-BlackOblique.woff
     
     
+
+
+
+
+@font-face{font-family:"nexa light";
+    src:url(/fonts/nexa/nexalight-webfont.eot)
+    url(/fonts/nexa/nexalight-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexalight-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexalight-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexalight-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexalight-webfont.svg#nexalight) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"nexa light italic"
+    url(/fonts/nexa/nexalightitalic-webfont.eot)
+    url(/fonts/nexa/nexalightitalic-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexalightitalic-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexalightitalic-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexalightitalic-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexalightitalic-webfont.svg#nexalight_italic) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:nexa
+    url(/fonts/nexa/nexalight-webfont.eot)
+    url(/fonts/nexa/nexalight-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexalight-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexalight-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexalight-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexalight-webfont.svg#nexalight) format("svg");
+    font-weight:light;
+    font-style:normal}
+
+@font-face{font-family:nexa
+    url(/fonts/nexa/nexalightitalic-webfont.eot)
+    url(/fonts/nexa/nexalightitalic-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexalightitalic-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexalightitalic-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexalightitalic-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexalightitalic-webfont.svg#nexalight_italic) format("svg");
+    font-weight:light;
+    font-style:italic}
+
+@font-face{font-family:"nexa book"
+    url(/fonts/nexa/nexabook-webfont.eot)
+    url(/fonts/nexa/nexabook-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexabook-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexabook-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexabook-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexabook-webfont.svg#nexabook) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"nexa book italic"
+    url(/fonts/nexa/nexabookitalic-webfont.eot)
+    url(/fonts/nexa/nexabookitalic-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexabookitalic-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexabookitalic-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexabookitalic-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexabookitalic-webfont.svg#nexabook_italic) format("svg");
+    font-weight:400;
+    font-style:italic}
+
+@font-face{font-family:nexa
+    url(/fonts/nexa/nexa-webfont.eot)
+    url(/fonts/nexa/nexa-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexa-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexa-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexa-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexa-webfont.svg#nexaregular) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:nexa
+    url(/fonts/nexa/nexa-regularitalic-webfont.eot)
+    url(/fonts/nexa/nexa-regularitalic-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexa-regularitalic-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexa-regularitalic-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexa-regularitalic-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexa-regularitalic-webfont.svg#nexaregular_italic) format("svg");
+    font-weight:400;
+    font-style:italic}
+
+@font-face{font-family:"nexa italic"
+    url(/fonts/nexa/nexa-regularitalic-webfont.eot)
+    url(/fonts/nexa/nexa-regularitalic-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexa-regularitalic-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexa-regularitalic-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexa-regularitalic-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexa-regularitalic-webfont.svg#nexaregular_italic) format("svg");
+    font-weight:400;
+    font-style:italic}
+
+@font-face{font-family:"nexa bold"
+    url(/fonts/nexa/nexabold-webfont.eot)
+    url(/fonts/nexa/nexabold-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexabold-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexabold-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexabold-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexabold-webfont.svg#nexabold) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"nexa bold italic"
+    url(/fonts/nexa/nexabolditalic-webfont.eot)
+    url(/fonts/nexa/nexabolditalic-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexabolditalic-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexabolditalic-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexabolditalic-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexabolditalic-webfont.svg#nexabold_italic) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:nexa
+    url(/fonts/nexa/nexabold-webfont.eot)
+    url(/fonts/nexa/nexabold-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexabold-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexabold-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexabold-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexabold-webfont.svg#nexabold) format("svg");
+    font-weight:700;
+    font-style:normal}
+
+@font-face{font-family:nexa
+    url(/fonts/nexa/nexabolditalic-webfont.eot)
+    url(/fonts/nexa/nexabolditalic-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexabolditalic-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexabolditalic-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexabolditalic-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexabolditalic-webfont.svg#nexabold_italic) format("svg");
+    font-weight:700;
+    font-style:italic}
+
+@font-face{font-family:"nexa xbold"
+    url(/fonts/nexa/nexaxbold-webfont.eot)
+    url(/fonts/nexa/nexaxbold-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexaxbold-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexaxbold-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexaxbold-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexaxbold-webfont.svg#nexabold) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"nexa xbold italic"
+    url(/fonts/nexa/nexaxbolditalic-webfont.eot)
+    url(/fonts/nexa/nexaxbolditalic-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexaxbolditalic-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexaxbolditalic-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexaxbolditalic-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexaxbolditalic-webfont.svg#nexabold_italic) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"nexa black"
+    url(/fonts/nexa/nexablack-webfont.eot)
+    url(/fonts/nexa/nexablack-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexablack-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexablack-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexablack-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexablack-webfont.svg#nexablack) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"nexa black italic"
+    url(/fonts/nexa/nexablackitalic-webfont.eot)
+    url(/fonts/nexa/nexablackitalic-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexablackitalic-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexablackitalic-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexablackitalic-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexablackitalic-webfont.svg#nexablack_italic) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"nexa heavy"
+    url(/fonts/nexa/nexaheavy-webfont.eot)
+    url(/fonts/nexa/nexaheavy-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexaheavy-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexaheavy-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexaheavy-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexaheavy-webfont.svg#nexaheavy) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"nexa heavy italic"
+    url(/fonts/nexa/nexaheavyitalic-webfont.eot)
+    url(/fonts/nexa/nexaheavyitalic-webfont.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/nexa/nexaheavyitalic-webfont.woff2) format("woff2"),
+    url(/fonts/nexa/nexaheavyitalic-webfont.woff) format("woff"),
+    url(/fonts/nexa/nexaheavyitalic-webfont.ttf) format("truetype"),
+    url(/fonts/nexa/nexaheavyitalic-webfont.svg#nexaheavy_italic) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"avenir light"
+    url(/fonts/avenir/AvenirLT-Light.eot)
+    url(/fonts/avenir/AvenirLT-Light.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-Light.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-Light.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-Light.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-Light.svg#AvenirLT-Light) format("svg");
+    font-weight:300;
+    font-style:normal}
+
+@font-face{font-family:"avenir light italic"
+    url(/fonts/avenir/AvenirLT-LightOblique.eot)
+    url(/fonts/avenir/AvenirLT-LightOblique.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-LightOblique.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-LightOblique.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-LightOblique.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-LightOblique.svg#AvenirLT-LightOblique) format("svg");
+    font-weight:300;
+    font-style:italic}
+
+@font-face{font-family:"avenir book"
+    url(/fonts/avenir/AvenirLT-Book.eot)
+    url(/fonts/avenir/AvenirLT-Book.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-Book.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-Book.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-Book.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-Book.svg#AvenirLT-Book) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"avenir book italic"
+    url(/fonts/avenir/AvenirLT-BookOblique.eot)
+    url(/fonts/avenir/AvenirLT-BookOblique.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-BookOblique.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-BookOblique.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-BookOblique.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-BookOblique.svg#AvenirLT-BookOblique) format("svg");
+    font-weight:400;
+    font-style:italic}
+
+@font-face{font-family:avenir
+    url(/fonts/avenir/AvenirLT-Roman.eot)
+    url(/fonts/avenir/AvenirLT-Roman.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-Roman.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-Roman.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-Roman.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-Roman.svg#AvenirLT-Roman) format("svg");
+    font-weight:400;
+    font-style:normal}
+
+@font-face{font-family:"avenir italic"
+    url(/fonts/avenir/AvenirLT-Oblique.eot)
+    url(/fonts/avenir/AvenirLT-Oblique.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-Oblique.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-Oblique.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-Oblique.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-Oblique.svg#AvenirLT-Oblique) format("svg");
+    font-weight:400;
+    font-style:italic}
+
+@font-face{font-family:"avenir medium"
+    url(/fonts/avenir/AvenirLT-Medium.eot)
+    url(/fonts/avenir/AvenirLT-Medium.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-Medium.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-Medium.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-Medium.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-Medium.svg#AvenirLT-Medium) format("svg");
+    font-weight:500;
+    font-style:normal}
+
+@font-face{font-family:"avenir medium italic"
+    url(/fonts/avenir/AvenirLT-MediumOblique.eot)
+    url(/fonts/avenir/AvenirLT-MediumOblique.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-MediumOblique.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-MediumOblique.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-MediumOblique.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-MediumOblique.svg#AvenirLT-MediumOblique) format("svg");
+    font-weight:500;
+    font-style:italic}
+
+@font-face{font-family:"avenir heavy"
+    url(/fonts/avenir/AvenirLT-Heavy.eot)
+    url(/fonts/avenir/AvenirLT-Heavy.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-Heavy.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-Heavy.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-Heavy.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-Heavy.svg#AvenirLT-Heavy) format("svg");
+    font-weight:700;
+    font-style:normal}
+
+@font-face{font-family:"avenir heavy italic"
+    url(/fonts/avenir/AvenirLT-HeavyOblique.eot)
+    url(/fonts/avenir/AvenirLT-HeavyOblique.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-HeavyOblique.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-HeavyOblique.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-HeavyOblique.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-HeavyOblique.svg#AvenirLT-HeavyOblique) format("svg");
+    font-weight:700;
+    font-style:italic}
+
+@font-face{font-family:"avenir black"
+    url(/fonts/avenir/AvenirLT-Black.eot)
+    url(/fonts/avenir/AvenirLT-Black.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-Black.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-Black.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-Black.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-Black.svg#AvenirLT-Black) format("svg");
+    font-weight:900;
+    font-style:normal}
+
+@font-face{font-family:"avenir black italic"
+    url(/fonts/avenir/AvenirLT-BlackOblique.eot)
+    url(/fonts/avenir/AvenirLT-BlackOblique.eot?#iefix) format("embedded-opentype"),
+    url(/fonts/avenir/AvenirLT-BlackOblique.woff2) format("woff2"),
+    url(/fonts/avenir/AvenirLT-BlackOblique.woff) format("woff"),
+    url(/fonts/avenir/AvenirLT-BlackOblique.ttf) format("truetype"),
+    url(/fonts/avenir/AvenirLT-BlackOblique.svg#AvenirLT-BlackOblique) format("svg");
+    font-weight:900;
+    font-style:italic}
+
+
+
+/* FRGuide */
+
+Works
+
+/* use font-weight 300 */
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Book.eot
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Book.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Book.woff
+
+/* use font-weight 300 with font-style:italic */
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-BookItalic.eot
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-BookItalic.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-BookItalic.woff
+
+/* use font-weight 500 */
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Bold.eot
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Bold.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Bold.woff
+
+/* use font-weight 700 */
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Heavy.eot
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Heavy.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Heavy.woff
+
+/* use font-weight 800 */
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Black.eot
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Black.woff2
+https://d2w3zkq33l1i26.cloudfront.net/fonts/FrGuide/FrGuide-Black.woff
+
