@@ -1,0 +1,1 @@
+Sandbox for JS exercises
