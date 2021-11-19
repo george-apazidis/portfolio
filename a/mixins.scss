@@ -1,0 +1,29 @@
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $class == sm {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+@mixin background-problem-1 {
+  background-image: url("https://www.alticeusa.com/sites/default/files/annie-spratt-ITE_nXIDQ_A-unsplash_scaled_0.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
