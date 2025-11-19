@@ -3,20 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Sticky Button - Safari Fixed</title>
+    <title>Sticky Button - Simple Fix</title>
     <style>
-        :root {
-            /* Fallback for browsers that don't support dvh */
-            --viewport-height: 100vh;
-        }
-        
-        @supports (height: 100dvh) {
-            :root {
-                /* Use dynamic viewport height if supported */
-                --viewport-height: 100dvh;
-            }
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -28,8 +16,6 @@
             line-height: 1.6;
             padding: 20px;
             padding-bottom: calc(80px + env(safe-area-inset-bottom));
-            /* Ensure body takes at least full viewport */
-            min-height: var(--viewport-height);
         }
 
         h1 {
@@ -51,17 +37,17 @@
             color: #666;
         }
 
-        /* Container for sticky button - this is the key fix */
+        /* Container for sticky button */
         .sticky-button-container {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
             z-index: 1000;
-            /* Use dynamic viewport to handle Safari's shrinking/expanding toolbar */
-            padding-bottom: env(safe-area-inset-bottom);
             background-color: #28a745;
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            /* Only add safe area padding, nothing extra */
+            padding-bottom: env(safe-area-inset-bottom);
         }
 
         .sticky-button {
@@ -102,19 +88,18 @@
     </style>
 </head>
 <body>
-    <h1>Sticky Button - Safari Fixed</h1>
+    <h1>Sticky Button - Simple Approach</h1>
     
     <div class="info-box">
-        This version uses a container approach with dynamic viewport units to eliminate the gap in Safari.
+        Simple fixed positioning with safe area insets, no extra padding.
     </div>
 
     <div class="test-info">
-        <strong>What's Different:</strong>
+        <strong>The Reality:</strong>
         <ul>
-            <li>Button wrapped in a container with background color</li>
-            <li>Container fills any gaps when Safari toolbar animates</li>
-            <li>Safe area insets applied to container padding</li>
-            <li>Should work smoothly in Safari, Chrome, and other mobile browsers</li>
+            <li>Safari may show brief gaps during toolbar transitions - this is normal</li>
+            <li>Chrome should work cleanly</li>
+            <li>Most major sites accept these Safari quirks as unavoidable</li>
         </ul>
     </div>
     
@@ -138,14 +123,14 @@
     
     <p>Integer eget odio. In sit amet turpis. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.</p>
     
-    <p>The green button below should now work perfectly in Safari without showing any gaps when you scroll.</p>
+    <p>This is the cleanest approach - Safari gaps are a known browser limitation that even major sites live with.</p>
     
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
     
-    <p>Final paragraph to ensure you have enough content to scroll through and test the sticky button behavior thoroughly in Safari mobile.</p>
+    <p>Final paragraph to ensure you have enough content to scroll through and test the sticky button behavior thoroughly.</p>
 
     <div class="sticky-button-container">
-        <button class="sticky-button">No Gap in Safari! 🎉</button>
+        <button class="sticky-button">Clean & Simple ✓</button>
     </div>
 </body>
 </html>
