@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Sticky Button - Simple Fix</title>
+    <title>Sticky Button - Chrome Gap Fix</title>
     <style>
         * {
             margin: 0;
@@ -37,7 +37,7 @@
             color: #666;
         }
 
-        /* Container for sticky button */
+        /* Container for sticky button - extended to cover gaps */
         .sticky-button-container {
             position: fixed;
             bottom: 0;
@@ -46,8 +46,10 @@
             z-index: 1000;
             background-color: #28a745;
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-            /* Only add safe area padding, nothing extra */
-            padding-bottom: env(safe-area-inset-bottom);
+            /* Extend the container downward to cover Chrome's address bar area */
+            padding-bottom: calc(env(safe-area-inset-bottom) + 100px);
+            /* Pull the container down by the same amount to keep button in place */
+            transform: translateY(100px);
         }
 
         .sticky-button {
@@ -88,18 +90,18 @@
     </style>
 </head>
 <body>
-    <h1>Sticky Button - Simple Approach</h1>
+    <h1>Sticky Button - Chrome Gap Fix</h1>
     
     <div class="info-box">
-        Simple fixed positioning with safe area insets, no extra padding.
+        Uses transform to extend the container background below the viewport to cover Chrome's expanding address bar.
     </div>
 
     <div class="test-info">
-        <strong>The Reality:</strong>
+        <strong>Testing:</strong>
         <ul>
-            <li>Safari may show brief gaps during toolbar transitions - this is normal</li>
-            <li>Chrome should work cleanly</li>
-            <li>Most major sites accept these Safari quirks as unavoidable</li>
+            <li>Scroll down to hide Chrome address bar</li>
+            <li>Scroll back up - button should stay anchored</li>
+            <li>No white/page background should show below button</li>
         </ul>
     </div>
     
@@ -123,14 +125,14 @@
     
     <p>Integer eget odio. In sit amet turpis. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.</p>
     
-    <p>This is the cleanest approach - Safari gaps are a known browser limitation that even major sites live with.</p>
+    <p>This should eliminate the white gap that appears in Chrome when scrolling up.</p>
     
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
     
     <p>Final paragraph to ensure you have enough content to scroll through and test the sticky button behavior thoroughly.</p>
 
     <div class="sticky-button-container">
-        <button class="sticky-button">Clean & Simple ✓</button>
+        <button class="sticky-button">Chrome Gap Fixed? 🤞</button>
     </div>
 </body>
 </html>
