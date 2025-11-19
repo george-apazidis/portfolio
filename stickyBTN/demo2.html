@@ -3,37 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Sticky Button - Safari Gap Fix v2</title>
+    <title>Sticky Button - Safari Fixed</title>
     <style>
+        :root {
+            /* Fallback for browsers that don't support dvh */
+            --viewport-height: 100vh;
+        }
+        
+        @supports (height: 100dvh) {
+            :root {
+                /* Use dynamic viewport height if supported */
+                --viewport-height: 100dvh;
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        html, body {
-            height: 100%;
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-        }
-
-        /* Main wrapper that enforces full viewport height */
-        .page-wrapper {
-            min-height: 100vh;
-            /* Use dvh if supported for dynamic viewport */
-            min-height: 100dvh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .content {
-            flex: 1;
             padding: 20px;
-            padding-bottom: 20px;
-            overflow-y: auto;
+            padding-bottom: calc(80px + env(safe-area-inset-bottom));
+            /* Ensure body takes at least full viewport */
+            min-height: var(--viewport-height);
         }
 
         h1 {
@@ -55,18 +51,17 @@
             color: #666;
         }
 
-        /* Sticky footer area */
-        .sticky-footer {
-            position: sticky;
+        /* Container for sticky button - this is the key fix */
+        .sticky-button-container {
+            position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            background-color: #28a745;
-            padding-bottom: env(safe-area-inset-bottom);
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
             z-index: 1000;
-            /* Prevent any gaps */
-            margin-top: auto;
+            /* Use dynamic viewport to handle Safari's shrinking/expanding toolbar */
+            padding-bottom: env(safe-area-inset-bottom);
+            background-color: #28a745;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .sticky-button {
@@ -107,53 +102,50 @@
     </style>
 </head>
 <body>
-    <div class="page-wrapper">
-        <div class="content">
-            <h1>Sticky Button - Safari Gap Fix v2</h1>
-            
-            <div class="info-box">
-                This version uses flexbox layout with min-height: 100dvh to force the button to stay at the viewport bottom.
-            </div>
+    <h1>Sticky Button - Safari Fixed</h1>
+    
+    <div class="info-box">
+        This version uses a container approach with dynamic viewport units to eliminate the gap in Safari.
+    </div>
 
-            <div class="test-info">
-                <strong>Approach:</strong>
-                <ul>
-                    <li>Flexbox container with min-height: 100dvh</li>
-                    <li>Sticky positioning on the button container</li>
-                    <li>Should eliminate gaps during Safari toolbar transitions</li>
-                </ul>
-            </div>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
-            
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. Sed euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc.</p>
-            
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-            
-            <p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-            
-            <p>Suspendisse potenti. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.</p>
-            
-            <p>Integer eget odio. In sit amet turpis. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.</p>
-            
-            <p>The button should now stay glued to the bottom in Safari without gaps.</p>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-            
-            <p>Final paragraph for testing scroll behavior in Safari mobile browser.</p>
-        </div>
+    <div class="test-info">
+        <strong>What's Different:</strong>
+        <ul>
+            <li>Button wrapped in a container with background color</li>
+            <li>Container fills any gaps when Safari toolbar animates</li>
+            <li>Safe area insets applied to container padding</li>
+            <li>Should work smoothly in Safari, Chrome, and other mobile browsers</li>
+        </ul>
+    </div>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+    
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. Sed euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc.</p>
+    
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+    
+    <p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+    
+    <p>Suspendisse potenti. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.</p>
+    
+    <p>Integer eget odio. In sit amet turpis. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.</p>
+    
+    <p>The green button below should now work perfectly in Safari without showing any gaps when you scroll.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    
+    <p>Final paragraph to ensure you have enough content to scroll through and test the sticky button behavior thoroughly in Safari mobile.</p>
 
-        <div class="sticky-footer">
-            <button class="sticky-button">Testing Safari Fix 🎯</button>
-        </div>
+    <div class="sticky-button-container">
+        <button class="sticky-button">No Gap in Safari! 🎉</button>
     </div>
 </body>
 </html>
