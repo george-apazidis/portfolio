@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Sticky Button - Minimal</title>
     <style>
         * {
@@ -15,7 +15,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             padding: 20px;
-            padding-bottom: 80px;
+            padding-bottom: calc(80px + env(safe-area-inset-bottom));
         }
 
         h1 {
@@ -46,6 +46,7 @@
             color: white;
             border: none;
             padding: 16px 20px;
+            padding-bottom: calc(16px + env(safe-area-inset-bottom));
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
@@ -62,7 +63,7 @@
     <h1>Sticky Button - Minimal Implementation</h1>
     
     <div class="info-box">
-        Simple sticky button with minimal CSS - works across mobile browsers.
+        Simple sticky button with safe area insets - works across mobile browsers and respects iOS home indicator.
     </div>
     
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
